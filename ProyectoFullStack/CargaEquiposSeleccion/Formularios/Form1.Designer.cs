@@ -40,11 +40,11 @@
             // BtIngreso
             // 
             this.BtIngreso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtIngreso.Location = new System.Drawing.Point(193, 250);
+            this.BtIngreso.Location = new System.Drawing.Point(330, 68);
             this.BtIngreso.Name = "BtIngreso";
-            this.BtIngreso.Size = new System.Drawing.Size(230, 116);
+            this.BtIngreso.Size = new System.Drawing.Size(155, 47);
             this.BtIngreso.TabIndex = 0;
-            this.BtIngreso.Text = "Ingresar";
+            this.BtIngreso.Text = "Ingresar jugador";
             this.BtIngreso.UseVisualStyleBackColor = true;
             this.BtIngreso.Click += new System.EventHandler(this.BtIngreso_Click);
             // 
@@ -53,9 +53,9 @@
             this.LbLista.AutoSize = true;
             this.LbLista.Location = new System.Drawing.Point(51, 171);
             this.LbLista.Name = "LbLista";
-            this.LbLista.Size = new System.Drawing.Size(98, 13);
+            this.LbLista.Size = new System.Drawing.Size(147, 13);
             this.LbLista.TabIndex = 1;
-            this.LbLista.Text = "Lista de ingresados";
+            this.LbLista.Text = "Lista de jugadores ingresados";
             // 
             // TxIngreso
             // 
@@ -69,37 +69,37 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(46, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 13);
+            this.label2.Size = new System.Drawing.Size(180, 13);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Ingrese aquí los datos a cargar";
+            this.label2.Text = "Ingrese aquí los juegadores a cargar";
             // 
             // BtSalir
             // 
-            this.BtSalir.Location = new System.Drawing.Point(715, 401);
+            this.BtSalir.Location = new System.Drawing.Point(762, 424);
             this.BtSalir.Name = "BtSalir";
-            this.BtSalir.Size = new System.Drawing.Size(146, 67);
+            this.BtSalir.Size = new System.Drawing.Size(99, 44);
             this.BtSalir.TabIndex = 4;
-            this.BtSalir.Text = "Cerrar Programa";
+            this.BtSalir.Text = "Salir";
             this.BtSalir.UseVisualStyleBackColor = true;
             this.BtSalir.Click += new System.EventHandler(this.BtSalir_Click);
             // 
             // BtMostrar
             // 
-            this.BtMostrar.Location = new System.Drawing.Point(449, 250);
+            this.BtMostrar.Location = new System.Drawing.Point(330, 137);
             this.BtMostrar.Name = "BtMostrar";
-            this.BtMostrar.Size = new System.Drawing.Size(230, 116);
+            this.BtMostrar.Size = new System.Drawing.Size(155, 47);
             this.BtMostrar.TabIndex = 1;
-            this.BtMostrar.Text = "Mostrar";
+            this.BtMostrar.Text = "Mostrar jugador";
             this.BtMostrar.UseVisualStyleBackColor = true;
             this.BtMostrar.Click += new System.EventHandler(this.BtMostrar_Click);
             // 
             // BtLimpiar
             // 
-            this.BtLimpiar.Location = new System.Drawing.Point(315, 391);
+            this.BtLimpiar.Location = new System.Drawing.Point(330, 201);
             this.BtLimpiar.Name = "BtLimpiar";
-            this.BtLimpiar.Size = new System.Drawing.Size(230, 57);
+            this.BtLimpiar.Size = new System.Drawing.Size(155, 47);
             this.BtLimpiar.TabIndex = 2;
-            this.BtLimpiar.Text = "Limpiar Lista";
+            this.BtLimpiar.Text = "Borrar lista cargada";
             this.BtLimpiar.UseVisualStyleBackColor = true;
             this.BtLimpiar.Click += new System.EventHandler(this.BtLimpiar_Click);
             // 
