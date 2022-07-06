@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.BtSalir = new System.Windows.Forms.Button();
             this.BtMostrar = new System.Windows.Forms.Button();
+            this.BtLimpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtIngreso
@@ -87,10 +88,20 @@
             this.BtMostrar.Location = new System.Drawing.Point(449, 250);
             this.BtMostrar.Name = "BtMostrar";
             this.BtMostrar.Size = new System.Drawing.Size(230, 116);
-            this.BtMostrar.TabIndex = 5;
+            this.BtMostrar.TabIndex = 1;
             this.BtMostrar.Text = "Mostrar";
             this.BtMostrar.UseVisualStyleBackColor = true;
             this.BtMostrar.Click += new System.EventHandler(this.BtMostrar_Click);
+            // 
+            // BtLimpiar
+            // 
+            this.BtLimpiar.Location = new System.Drawing.Point(315, 391);
+            this.BtLimpiar.Name = "BtLimpiar";
+            this.BtLimpiar.Size = new System.Drawing.Size(230, 57);
+            this.BtLimpiar.TabIndex = 2;
+            this.BtLimpiar.Text = "Limpiar Lista";
+            this.BtLimpiar.UseVisualStyleBackColor = true;
+            this.BtLimpiar.Click += new System.EventHandler(this.BtLimpiar_Click);
             // 
             // Form1
             // 
@@ -99,6 +110,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(873, 480);
+            this.Controls.Add(this.BtLimpiar);
             this.Controls.Add(this.BtMostrar);
             this.Controls.Add(this.BtSalir);
             this.Controls.Add(this.label2);
@@ -122,6 +134,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtSalir;
         private System.Windows.Forms.Button BtMostrar;
+        private System.Windows.Forms.Button BtLimpiar;
     }
 }
 

@@ -18,9 +18,11 @@ namespace CargaEquiposSeleccion
         //o bien hacer control + punto y automaticamente encuentra la ruta
 
         //Arreglo de personas, para realizar la carga en el proyecto
-        public Persona[] personas { get; set; } = new Persona[2]; //Propiedades de la persona
+        public Persona[] personas { get; set; }
 
         //Constructor del formulario -> aca es donde empieza a ejecutar el programa
+
+       
         public Form1()
         {
             InitializeComponent();
@@ -43,9 +45,15 @@ namespace CargaEquiposSeleccion
             //Creando propiedades de la instancia persona
             persona.Nombre = TxIngreso.Text;
 
+            Redimensionar();
+
             //Propiedad "Personas" - Instancia "persona"
-            personas[0] = persona;
+            //Personas.Leng(longitud de personas)
+
+            personas[personas.Length -1] = persona;
         }
+            
+
 
         private void BtMostrar_Click(object sender, EventArgs e)
         {
@@ -55,7 +63,36 @@ namespace CargaEquiposSeleccion
                 LbLista.Text = LbLista.Text + " " + Cantidad.Nombre + "\r\n";
             }
         }
-    }
-}
+
+        private void BtLimpiar_Click(object sender, EventArgs e)
+        {
+            LbLista.Text = null;
+        }
+
+        private void Redimensionar()
+        {
+            if (personas == null)
+            {
+                personas = new Persona[2];
+            }
+            else
+            {
+                Persona[] ArregloAuxiliar = new Persona[personas.Length +1];
+
+                for (int incremento = 0; incremento < personas.Length + 1; incremento++)
+                {
+                    ArregloAuxiliar[incremento] = personas[incremento];
+
+                    personas = ArregloAuxiliar;
+                }
+
+            }
+        }
+    }  
+} 
+
+
+
+
 
         
