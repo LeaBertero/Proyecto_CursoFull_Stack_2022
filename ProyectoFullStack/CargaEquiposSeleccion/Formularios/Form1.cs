@@ -18,7 +18,7 @@ namespace CargaEquiposSeleccion
         //o bien hacer control + punto y automaticamente encuentra la ruta
 
         //Arreglo de personas, para realizar la carga en el proyecto
-        public Persona[] personas { get; set; }
+        public Jugadores[] personas { get; set; }
 
         //Constructor del formulario -> aca es donde empieza a ejecutar el programa
 
@@ -40,7 +40,7 @@ namespace CargaEquiposSeleccion
             TxIngreso.Focus();
 
             //Instanciar un objeto, en este caso la clase persona
-            Persona persona = new Persona();
+            Jugadores persona = new Jugadores();
 
             //Creando propiedades de la instancia persona
             persona.Nombre = TxIngreso.Text;
@@ -58,7 +58,7 @@ namespace CargaEquiposSeleccion
         private void BtMostrar_Click(object sender, EventArgs e)
         {
             LbLista.Text = "Lista de personas \r\n";
-            foreach (Persona Cantidad in personas)
+            foreach (Jugadores Cantidad in personas)
             {
                 LbLista.Text = LbLista.Text + " " + Cantidad.Nombre + "\r\n";
             }
@@ -73,11 +73,11 @@ namespace CargaEquiposSeleccion
         {
             if (personas == null)
             {
-                personas = new Persona[2];
+                personas = new Jugadores[2];
             }
             else
             {
-                Persona[] ArregloAuxiliar = new Persona[personas.Length +1];
+                Jugadores[] ArregloAuxiliar = new Jugadores[personas.Length +1];
 
                 for (int incremento = 0; incremento < personas.Length + 1; incremento++)
                 {
