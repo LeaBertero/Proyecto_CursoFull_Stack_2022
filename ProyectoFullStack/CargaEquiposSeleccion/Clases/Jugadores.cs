@@ -10,7 +10,7 @@ namespace CargaEquiposSeleccion.Clases
     public class Jugadores
     {
         //Propiedades de la clase (Persona)
-        public string Nombre { get; set; }
+        public string persona { get; set; }
     }
 }
 

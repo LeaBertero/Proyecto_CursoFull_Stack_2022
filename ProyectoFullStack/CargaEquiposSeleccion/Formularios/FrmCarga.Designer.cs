@@ -1,6 +1,6 @@
 ﻿namespace CargaEquiposSeleccion
 {
-    partial class Form1
+    partial class FrmCarga
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -75,7 +75,7 @@
             // 
             // BtSalir
             // 
-            this.BtSalir.Location = new System.Drawing.Point(762, 424);
+            this.BtSalir.Location = new System.Drawing.Point(49, 350);
             this.BtSalir.Name = "BtSalir";
             this.BtSalir.Size = new System.Drawing.Size(99, 44);
             this.BtSalir.TabIndex = 4;
@@ -109,7 +109,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(873, 480);
+            this.ClientSize = new System.Drawing.Size(513, 428);
             this.Controls.Add(this.BtLimpiar);
             this.Controls.Add(this.BtMostrar);
             this.Controls.Add(this.BtSalir);

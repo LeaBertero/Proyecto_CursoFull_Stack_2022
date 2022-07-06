@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace CargaEquiposSeleccion
 {
-    public partial class Form1 : Form //Form1 Hereda de Form
+    public partial class FrmCarga : Form //Form1 Hereda de Form
     {
         //Cuando se genere error y no reconozca la clase, se puede evitar de dos maneras
         //Bien poniendo la ruta de donde se encuentran los archivos,(Poner la rutra del NameSpace)
@@ -23,7 +23,7 @@ namespace CargaEquiposSeleccion
         //Constructor del formulario -> aca es donde empieza a ejecutar el programa
 
        
-        public Form1()
+        public FrmCarga()
         {
             InitializeComponent();
         }
@@ -43,7 +43,7 @@ namespace CargaEquiposSeleccion
             Jugadores persona = new Jugadores();
 
             //Creando propiedades de la instancia persona
-            persona.Nombre = TxIngreso.Text;
+            persona.persona = TxIngreso.Text;
 
             Redimensionar();
 
@@ -60,7 +60,7 @@ namespace CargaEquiposSeleccion
             LbLista.Text = "Lista de personas \r\n";
             foreach (Jugadores Cantidad in personas)
             {
-                LbLista.Text = LbLista.Text + " " + Cantidad.Nombre + "\r\n";
+                LbLista.Text = LbLista.Text + " " + Cantidad.persona + "\r\n";
             }
         }
 
@@ -73,7 +73,7 @@ namespace CargaEquiposSeleccion
         {
             if (personas == null)
             {
-                personas = new Jugadores[2];
+                personas = new Jugadores[1];
             }
             else
             {
