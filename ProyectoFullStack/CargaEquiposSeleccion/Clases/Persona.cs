@@ -9,6 +9,9 @@ namespace CargaEquiposSeleccion.Clases
     //Clases
     public class Persona
     {
+        //Propiedades de la clase (Persona)
+        public string Nombre { get; set; }
+
 
 
     }
