@@ -18,7 +18,7 @@ namespace CargaEquiposSeleccion
         //o bien hacer control + punto y automaticamente encuentra la ruta
 
         //Arreglo de personas, para realizar la carga en el proyecto
-        public Persona[] persona { get; set; } //Propiedades de la persona
+        public Persona[] personas { get; set; } = new Persona[2]; //Propiedades de la persona
 
         //Constructor del formulario -> aca es donde empieza a ejecutar el programa
         public Form1()
@@ -34,9 +34,22 @@ namespace CargaEquiposSeleccion
         private void BtIngreso_Click(object sender, EventArgs e)
         {
             //Instanciar un objeto, en este caso la clase persona
-            Persona persona = new Persona();    
+            Persona persona = new Persona();
 
+            //Creando propiedades de la instancia persona
+            persona.Nombre = TxIngreso.Text;
 
+            //Propiedad "Personas" - Instancia "persona"
+            personas[0] = persona;
+        }
+
+        private void BtMostrar_Click(object sender, EventArgs e)
+        {
+            LbLista.Text = "Lista de personas \r\n";
+            foreach (Persona Cantidad in personas)
+            {
+                LbLista.Text = LbLista.Text + " " + Cantidad.Nombre + "\r\n";
+            }
         }
     }
 }

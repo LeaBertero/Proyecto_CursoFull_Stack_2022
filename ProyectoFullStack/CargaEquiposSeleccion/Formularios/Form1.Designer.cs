@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.BtIngreso = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LbLista = new System.Windows.Forms.Label();
             this.TxIngreso = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BtSalir = new System.Windows.Forms.Button();
+            this.BtMostrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtIngreso
             // 
-            this.BtIngreso.Location = new System.Drawing.Point(241, 274);
+            this.BtIngreso.Location = new System.Drawing.Point(193, 250);
             this.BtIngreso.Name = "BtIngreso";
             this.BtIngreso.Size = new System.Drawing.Size(230, 116);
             this.BtIngreso.TabIndex = 0;
@@ -45,14 +46,14 @@
             this.BtIngreso.UseVisualStyleBackColor = true;
             this.BtIngreso.Click += new System.EventHandler(this.BtIngreso_Click);
             // 
-            // label1
+            // LbLista
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 171);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Lista de ingresados";
+            this.LbLista.AutoSize = true;
+            this.LbLista.Location = new System.Drawing.Point(51, 171);
+            this.LbLista.Name = "LbLista";
+            this.LbLista.Size = new System.Drawing.Size(98, 13);
+            this.LbLista.TabIndex = 1;
+            this.LbLista.Text = "Lista de ingresados";
             // 
             // TxIngreso
             // 
@@ -72,7 +73,7 @@
             // 
             // BtSalir
             // 
-            this.BtSalir.Location = new System.Drawing.Point(642, 371);
+            this.BtSalir.Location = new System.Drawing.Point(715, 401);
             this.BtSalir.Name = "BtSalir";
             this.BtSalir.Size = new System.Drawing.Size(146, 67);
             this.BtSalir.TabIndex = 4;
@@ -80,16 +81,27 @@
             this.BtSalir.UseVisualStyleBackColor = true;
             this.BtSalir.Click += new System.EventHandler(this.BtSalir_Click);
             // 
+            // BtMostrar
+            // 
+            this.BtMostrar.Location = new System.Drawing.Point(449, 250);
+            this.BtMostrar.Name = "BtMostrar";
+            this.BtMostrar.Size = new System.Drawing.Size(230, 116);
+            this.BtMostrar.TabIndex = 5;
+            this.BtMostrar.Text = "Mostrar";
+            this.BtMostrar.UseVisualStyleBackColor = true;
+            this.BtMostrar.Click += new System.EventHandler(this.BtMostrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(873, 480);
+            this.Controls.Add(this.BtMostrar);
             this.Controls.Add(this.BtSalir);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxIngreso);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LbLista);
             this.Controls.Add(this.BtIngreso);
             this.Name = "Form1";
             this.Text = "Carga Jugadores Seleccion";
@@ -101,10 +113,11 @@
         #endregion
 
         private System.Windows.Forms.Button BtIngreso;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LbLista;
         private System.Windows.Forms.TextBox TxIngreso;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtSalir;
+        private System.Windows.Forms.Button BtMostrar;
     }
 }
 
