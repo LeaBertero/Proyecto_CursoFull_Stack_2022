@@ -38,6 +38,7 @@
             // 
             // BtIngreso
             // 
+            this.BtIngreso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtIngreso.Location = new System.Drawing.Point(193, 250);
             this.BtIngreso.Name = "BtIngreso";
             this.BtIngreso.Size = new System.Drawing.Size(230, 116);
