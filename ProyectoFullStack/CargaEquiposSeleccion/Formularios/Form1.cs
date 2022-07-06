@@ -33,6 +33,10 @@ namespace CargaEquiposSeleccion
 
         private void BtIngreso_Click(object sender, EventArgs e)
         {
+            //Métodos de la caja de texto
+            TxIngreso.SelectAll();
+            TxIngreso.Focus();
+
             //Instanciar un objeto, en este caso la clase persona
             Persona persona = new Persona();
 
