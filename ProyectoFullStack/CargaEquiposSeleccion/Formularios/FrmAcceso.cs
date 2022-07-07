@@ -12,8 +12,6 @@ namespace CargaEquiposSeleccion
 {
     public partial class FrmAcceso : Form
     {
-        string Clave = "Hola";
-
         public FrmAcceso()
         {
             InitializeComponent();
@@ -21,23 +19,29 @@ namespace CargaEquiposSeleccion
 
         private void BtClave_Click(object sender, EventArgs e)
         {
-
-            if (Clave == "Hola")
+            if (TxClave.Text == "clave22")
             {
+
                 MessageBox.Show("Ingreso correcto");
-            }
-            else if (Clave != "Hola")
-            {
-                MessageBox.Show("Clave incorrecta, intente nuevamente");
-            }
-            else if (Clave == null)
-            {
-                MessageBox.Show("Ingreso no valido");
-            }
 
-            FrmCarga SegundoForm = new FrmCarga();
-            SegundoForm.ShowDialog();
+                FrmCarga SegundoForm = new FrmCarga();
+                SegundoForm.ShowDialog();
 
+            }
+            if (TxClave.Text == "")
+            {
+                MessageBox.Show("Debe ingresar una clave valida");
+                
+            }
+            if (TxClave.Text != "clave22")
+            {
+                MessageBox.Show("Ingreso incorrecto");
+            }
         }
     }
 }
+        
+
+
+            
+
