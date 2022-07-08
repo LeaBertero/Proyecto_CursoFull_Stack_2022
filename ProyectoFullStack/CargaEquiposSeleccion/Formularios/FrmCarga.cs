@@ -34,6 +34,9 @@ namespace CargaEquiposSeleccion
                 LbLista.Text = "Persona no valida";
             }
         }
+           
+
+
         private void BtMostrar_Click(object sender, EventArgs e)
         {
             LbLista.Text = Lista.ToString();
