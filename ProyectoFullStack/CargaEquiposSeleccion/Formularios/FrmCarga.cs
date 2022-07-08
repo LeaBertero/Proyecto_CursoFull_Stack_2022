@@ -24,9 +24,15 @@ namespace CargaEquiposSeleccion
         {
             this.Close();
         }
+
+        
         private void BtIngreso_Click_1(object sender, EventArgs e)
         {
-            Lista.AddPersona(TxIngreso.Text, TxAño.Text);
+            LbLista.Text = "";
+            if (!Lista.AddPersona(TxIngreso.Text,TxAño.Text));
+            {
+                LbLista.Text = "Persona no valida";
+            }
         }
         private void BtMostrar_Click(object sender, EventArgs e)
         {
