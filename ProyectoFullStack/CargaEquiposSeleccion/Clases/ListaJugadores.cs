@@ -29,6 +29,21 @@ namespace CargaEquiposSeleccion.Clases
             }
         }
 
-    }
+        public void AddPersona(string Nombre, string Año)
+        {
+            Jugadores persona = new Jugadores(); //Instanciar/inicializar un objeto, en este caso la clase persona
 
+            persona.Nombre = Nombre; //Creando propiedades de la instancia persona
+
+            persona.Edad = Convert.ToInt32(Año);
+
+            Redimensionar(); //LLamo al metodo en el boton de ingreso
+
+            personas[personas.Length -1] = persona;
+        }
+    }
 }
+
+            
+
+

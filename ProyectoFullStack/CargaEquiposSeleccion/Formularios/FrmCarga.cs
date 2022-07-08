@@ -27,19 +27,19 @@ namespace CargaEquiposSeleccion
        
         private void BtIngreso_Click_1(object sender, EventArgs e)
         {
-            Jugadores persona = new Jugadores(); //Instanciar/inicializar un objeto, en este caso la clase persona
+            //Jugadores persona = new Jugadores(); //Instanciar/inicializar un objeto, en este caso la clase persona
             
-            persona.Nombre = TxIngreso.Text; //Creando propiedades de la instancia persona
+            //persona.Nombre = TxIngreso.Text; //Creando propiedades de la instancia persona
 
-            persona.Edad = Convert.ToInt32(TxAño.Text);
+            //persona.Edad = Convert.ToInt32(TxAño.Text);
             
-            Lista.Redimensionar(); //LLamo al metodo en el boton de ingreso
+            //Lista.Redimensionar(); //LLamo al metodo en el boton de ingreso
 
-            Lista.personas[Lista.personas.Length -1] = persona;
+            //Lista.personas[Lista.personas.Length -1] = persona;
             
-            TxIngreso.SelectAll(); //Métodos de la caja de texto
+            //TxIngreso.SelectAll(); //Métodos de la caja de texto
             
-            TxIngreso.Focus();
+            //TxIngreso.Focus();
         }
         private void BtMostrar_Click(object sender, EventArgs e)
         {
