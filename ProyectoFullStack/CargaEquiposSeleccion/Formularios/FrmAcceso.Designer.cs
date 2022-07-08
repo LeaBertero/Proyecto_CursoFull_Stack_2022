@@ -83,7 +83,7 @@
             this.Controls.Add(this.BtClave);
             this.Name = "FrmAcceso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmAcceso";
+            this.Text = "Ingrese clave para acceder";
             this.ResumeLayout(false);
             this.PerformLayout();
 
