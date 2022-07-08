@@ -42,7 +42,7 @@
             // BtIngreso
             // 
             this.BtIngreso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtIngreso.Location = new System.Drawing.Point(381, 26);
+            this.BtIngreso.Location = new System.Drawing.Point(262, 26);
             this.BtIngreso.Name = "BtIngreso";
             this.BtIngreso.Size = new System.Drawing.Size(155, 47);
             this.BtIngreso.TabIndex = 0;
@@ -53,7 +53,7 @@
             // LbLista
             // 
             this.LbLista.AutoSize = true;
-            this.LbLista.Location = new System.Drawing.Point(163, 61);
+            this.LbLista.Location = new System.Drawing.Point(487, 26);
             this.LbLista.Name = "LbLista";
             this.LbLista.Size = new System.Drawing.Size(147, 13);
             this.LbLista.TabIndex = 1;
@@ -77,7 +77,7 @@
             // 
             // BtSalir
             // 
-            this.BtSalir.Location = new System.Drawing.Point(35, 353);
+            this.BtSalir.Location = new System.Drawing.Point(35, 238);
             this.BtSalir.Name = "BtSalir";
             this.BtSalir.Size = new System.Drawing.Size(99, 44);
             this.BtSalir.TabIndex = 4;
@@ -87,7 +87,7 @@
             // 
             // BtMostrar
             // 
-            this.BtMostrar.Location = new System.Drawing.Point(381, 85);
+            this.BtMostrar.Location = new System.Drawing.Point(262, 79);
             this.BtMostrar.Name = "BtMostrar";
             this.BtMostrar.Size = new System.Drawing.Size(155, 47);
             this.BtMostrar.TabIndex = 1;
@@ -97,7 +97,7 @@
             // 
             // BtLimpiar
             // 
-            this.BtLimpiar.Location = new System.Drawing.Point(381, 150);
+            this.BtLimpiar.Location = new System.Drawing.Point(262, 132);
             this.BtLimpiar.Name = "BtLimpiar";
             this.BtLimpiar.Size = new System.Drawing.Size(155, 47);
             this.BtLimpiar.TabIndex = 2;
@@ -108,15 +108,15 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 122);
+            this.label1.Location = new System.Drawing.Point(32, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Año nacimiento";
+            this.label1.Text = "Edad";
             // 
             // TxAño
             // 
-            this.TxAño.Location = new System.Drawing.Point(35, 150);
+            this.TxAño.Location = new System.Drawing.Point(35, 121);
             this.TxAño.Name = "TxAño";
             this.TxAño.Size = new System.Drawing.Size(100, 20);
             this.TxAño.TabIndex = 5;
@@ -127,7 +127,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(580, 428);
+            this.ClientSize = new System.Drawing.Size(719, 310);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxAño);
             this.Controls.Add(this.BtLimpiar);

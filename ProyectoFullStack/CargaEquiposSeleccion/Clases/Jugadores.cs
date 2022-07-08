@@ -10,9 +10,9 @@ namespace CargaEquiposSeleccion.Clases
     public class Jugadores
     {
         //Propiedades de la clase (Persona)
-        public string persona { get; set; }
+        public string Nombre { get; set; }
 
-        public int AñoNacimieniento { get; set; }
+        public int Edad { get; set; }
 
     }
 }

@@ -13,16 +13,11 @@ namespace CargaEquiposSeleccion
 {
     public partial class FrmCarga : Form //Form1 Hereda de Form
     {
-        //Cuando se genere error y no reconozca la clase, se puede evitar de dos maneras
-        //Bien poniendo la ruta de donde se encuentran los archivos,(Poner la rutra del NameSpace)
-        //o bien hacer control + punto y automaticamente encuentra la ruta
-
         //Arreglo de personas, para realizar la carga en el proyecto
-        public Jugadores[] personas { get; set; }
+        public Jugadores[] personas { get; set; } = new Jugadores[3];
 
-        //Constructor del formulario -> aca es donde empieza a ejecutar el programa
+        public int posicion = -1;
 
-       
         public FrmCarga()
         {
             InitializeComponent();
@@ -31,48 +26,6 @@ namespace CargaEquiposSeleccion
         private void BtSalir_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        
-
-
-            
-
-
-        private void BtMostrar_Click(object sender, EventArgs e)
-        {
-            LbLista.Text = "Lista de personas \r\n";
-            foreach (Jugadores Cantidad in personas)
-            {
-                LbLista.Text = LbLista.Text + "Nombre " + Cantidad.persona + "" + "Año Nac " + Cantidad.AñoNacimieniento.ToString() + "\r\n";
-            }
-        }
-
-                
-
-        private void BtLimpiar_Click(object sender, EventArgs e)
-        {
-            LbLista.Text = null;
-        }
-
-        private void Redimensionar()
-        {
-            if (personas == null)
-            {
-                personas = new Jugadores[1];
-            }
-            else
-            {
-                Jugadores[] ArregloAuxiliar = new Jugadores[personas.Length +1];
-
-                for (int incremento = 0; incremento < personas.Length + 1; incremento++)
-                {
-                    ArregloAuxiliar[incremento] = personas[incremento];
-
-                    personas = ArregloAuxiliar;
-                }
-
-            }
         }
 
         private void BtIngreso_Click_1(object sender, EventArgs e)
@@ -84,20 +37,81 @@ namespace CargaEquiposSeleccion
             //Instanciar un objeto, en este caso la clase persona
             Jugadores persona = new Jugadores();
 
+            posicion = posicion + 1;
+
             //Creando propiedades de la instancia persona
-            persona.persona = TxIngreso.Text;
+            persona.Nombre = TxIngreso.Text;
 
-            persona.AñoNacimieniento = Convert.ToInt32(TxAño.Text);
+            persona.Edad = Convert.ToInt32(TxAño.Text);
 
-            Redimensionar();
+            personas[posicion] = persona;
+
+            //Redimensionar();
 
             //Propiedad "Personas" - Instancia "persona"
             //Personas.Leng(longitud de personas)
 
             personas[personas.Length - 1] = persona;
         }
+
+        private void BtMostrar_Click(object sender, EventArgs e)
+        {
+            LbLista.Text = "Lista de personas \r\n";
+            foreach (Jugadores Pers in personas)
+            {
+                LbLista.Text = LbLista.Text + "Nombre: " + Pers.Nombre + " - " + " Edad: " + Pers.Edad.ToString() + "\r\n" + "\r\n";
+            }
+        }
+
+        private void BtLimpiar_Click(object sender, EventArgs e)
+        {
+            LbLista.Text = null;
+        }
+
+        //private void Redimensionar()
+        //{
+        //    if (personas == null)
+        //    {
+        //        personas = new Jugadores[1];
+        //    }
+        //    else
+        //    {
+        //        Jugadores[] ArregloAuxiliar = new Jugadores[personas.Length + 1];
+
+        //        for (int incremento = 0; incremento < personas.Length + 1; incremento++)
+        //        {
+        //            ArregloAuxiliar[incremento] = personas[incremento];
+
+        //            personas = ArregloAuxiliar;
+        //        }
+        //    }
+        //}
+        
     }  
 } 
+        
+
+        
+
+       
+        
+
+
+
+
+
+
+        
+
+
+
+
+
+
+                
+
+
+        
 
 
 
