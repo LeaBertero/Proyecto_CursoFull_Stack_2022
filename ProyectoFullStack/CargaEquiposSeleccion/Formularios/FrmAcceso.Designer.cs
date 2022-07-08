@@ -39,7 +39,7 @@
             this.BtClave.Location = new System.Drawing.Point(118, 156);
             this.BtClave.Name = "BtClave";
             this.BtClave.Size = new System.Drawing.Size(175, 56);
-            this.BtClave.TabIndex = 0;
+            this.BtClave.TabIndex = 2;
             this.BtClave.Text = "Acceder";
             this.BtClave.UseVisualStyleBackColor = true;
             this.BtClave.Click += new System.EventHandler(this.BtClave_Click);

@@ -46,7 +46,7 @@
             this.BtIngreso.Location = new System.Drawing.Point(35, 121);
             this.BtIngreso.Name = "BtIngreso";
             this.BtIngreso.Size = new System.Drawing.Size(107, 32);
-            this.BtIngreso.TabIndex = 0;
+            this.BtIngreso.TabIndex = 3;
             this.BtIngreso.Text = "Ingresar jugador";
             this.BtIngreso.UseVisualStyleBackColor = true;
             this.BtIngreso.Click += new System.EventHandler(this.BtIngreso_Click_1);
@@ -65,7 +65,7 @@
             this.TxIngreso.Location = new System.Drawing.Point(35, 82);
             this.TxIngreso.Name = "TxIngreso";
             this.TxIngreso.Size = new System.Drawing.Size(100, 20);
-            this.TxIngreso.TabIndex = 2;
+            this.TxIngreso.TabIndex = 1;
             // 
             // label2
             // 
@@ -81,7 +81,7 @@
             this.BtSalir.Location = new System.Drawing.Point(148, 270);
             this.BtSalir.Name = "BtSalir";
             this.BtSalir.Size = new System.Drawing.Size(107, 43);
-            this.BtSalir.TabIndex = 4;
+            this.BtSalir.TabIndex = 6;
             this.BtSalir.Text = "Salir";
             this.BtSalir.UseVisualStyleBackColor = true;
             this.BtSalir.Click += new System.EventHandler(this.BtSalir_Click);
@@ -91,8 +91,8 @@
             this.BtMostrar.Location = new System.Drawing.Point(148, 121);
             this.BtMostrar.Name = "BtMostrar";
             this.BtMostrar.Size = new System.Drawing.Size(107, 32);
-            this.BtMostrar.TabIndex = 1;
-            this.BtMostrar.Text = "Mostrar jugador";
+            this.BtMostrar.TabIndex = 4;
+            this.BtMostrar.Text = "Mostrar lista";
             this.BtMostrar.UseVisualStyleBackColor = true;
             this.BtMostrar.Click += new System.EventHandler(this.BtMostrar_Click);
             // 
@@ -101,8 +101,8 @@
             this.BtLimpiar.Location = new System.Drawing.Point(148, 159);
             this.BtLimpiar.Name = "BtLimpiar";
             this.BtLimpiar.Size = new System.Drawing.Size(107, 32);
-            this.BtLimpiar.TabIndex = 2;
-            this.BtLimpiar.Text = "Borrar lista cargada";
+            this.BtLimpiar.TabIndex = 5;
+            this.BtLimpiar.Text = "Borrar lista";
             this.BtLimpiar.UseVisualStyleBackColor = true;
             this.BtLimpiar.Click += new System.EventHandler(this.BtLimpiar_Click);
             // 
@@ -120,7 +120,7 @@
             this.TxAño.Location = new System.Drawing.Point(141, 82);
             this.TxAño.Name = "TxAño";
             this.TxAño.Size = new System.Drawing.Size(100, 20);
-            this.TxAño.TabIndex = 5;
+            this.TxAño.TabIndex = 2;
             // 
             // label3
             // 
