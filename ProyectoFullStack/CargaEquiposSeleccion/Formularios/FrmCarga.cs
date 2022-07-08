@@ -13,7 +13,7 @@ namespace CargaEquiposSeleccion
 {
     public partial class FrmCarga : Form //Form1 Hereda de Form
     {
-        public Jugadores[] personas { get; set; } //Arreglo de personas, para realizar la carga en el proyecto
+        public ListaJugadores Lista { get; set; } = new ListaJugadores();
 
         public FrmCarga()
         {
@@ -24,7 +24,7 @@ namespace CargaEquiposSeleccion
         {
             this.Close();
         }
-
+       
         private void BtIngreso_Click_1(object sender, EventArgs e)
         {
             Jugadores persona = new Jugadores(); //Instanciar/inicializar un objeto, en este caso la clase persona
@@ -33,49 +33,35 @@ namespace CargaEquiposSeleccion
 
             persona.Edad = Convert.ToInt32(TxAño.Text);
             
-            Redimensionar(); //LLamo al metodo en el boton de ingreso
+            Lista.Redimensionar(); //LLamo al metodo en el boton de ingreso
 
-            personas[personas.Length -1] = persona;
+            Lista.personas[Lista.personas.Length -1] = persona;
             
             TxIngreso.SelectAll(); //Métodos de la caja de texto
             
             TxIngreso.Focus();
         }
-
         private void BtMostrar_Click(object sender, EventArgs e)
         {
             LbLista.Text = "Lista de personas \r\n";
-            foreach (Jugadores Pers in personas)
+            foreach (Jugadores Pers in Lista.personas)
             {
                 LbLista.Text = LbLista.Text + "Nombre: " + Pers.Nombre + " - " + " Edad: " + Pers.Edad.ToString() + "\r\n" + "\r\n";
             }
         }
-       
         private void BtLimpiar_Click(object sender, EventArgs e)
         {
             LbLista.Text = null;
         }
-
-        private void Redimensionar()
-        {
-            if (personas == null)
-            {
-                personas = new Jugadores[1];
-            }
-            else
-            {
-                Jugadores[] ArrNew = new Jugadores[personas.Length + 1];
-
-                for (int AddPers = 0; AddPers < personas.Length; AddPers++)
-                {
-                    ArrNew[AddPers] = personas[AddPers];
-                }
-
-                personas = ArrNew;
-            }
-        }
     }  
 } 
+       
+        
+
+
+
+       
+
         
         
 
