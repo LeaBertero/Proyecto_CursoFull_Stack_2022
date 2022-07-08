@@ -31,6 +31,7 @@
             this.BtClave = new System.Windows.Forms.Button();
             this.TxClave = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtCerrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtClave
@@ -59,12 +60,24 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Ingrese la clave para acceder al formulario de carga";
             // 
+            // BtCerrar
+            // 
+            this.BtCerrar.Location = new System.Drawing.Point(157, 218);
+            this.BtCerrar.Name = "BtCerrar";
+            this.BtCerrar.Size = new System.Drawing.Size(110, 25);
+            this.BtCerrar.TabIndex = 3;
+            this.BtCerrar.Text = "Cerrar";
+            this.BtCerrar.UseVisualStyleBackColor = true;
+            this.BtCerrar.Click += new System.EventHandler(this.BtCerrar_Click);
+            // 
             // FrmAcceso
             // 
+            this.AcceptButton = this.BtClave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(415, 240);
+            this.ClientSize = new System.Drawing.Size(415, 248);
+            this.Controls.Add(this.BtCerrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxClave);
             this.Controls.Add(this.BtClave);
@@ -81,5 +94,6 @@
         private System.Windows.Forms.Button BtClave;
         private System.Windows.Forms.TextBox TxClave;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtCerrar;
     }
 }

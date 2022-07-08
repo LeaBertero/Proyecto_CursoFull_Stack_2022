@@ -33,25 +33,9 @@ namespace CargaEquiposSeleccion
             this.Close();
         }
 
-        private void BtIngreso_Click(object sender, EventArgs e)
-        {
-            //Métodos de la caja de texto
-            TxIngreso.SelectAll();
-            TxIngreso.Focus();
+        
 
-            //Instanciar un objeto, en este caso la clase persona
-            Jugadores persona = new Jugadores();
 
-            //Creando propiedades de la instancia persona
-            persona.persona = TxIngreso.Text;
-
-            Redimensionar();
-
-            //Propiedad "Personas" - Instancia "persona"
-            //Personas.Leng(longitud de personas)
-
-            personas[personas.Length -1] = persona;
-        }
             
 
 
@@ -60,9 +44,11 @@ namespace CargaEquiposSeleccion
             LbLista.Text = "Lista de personas \r\n";
             foreach (Jugadores Cantidad in personas)
             {
-                LbLista.Text = LbLista.Text + " " + Cantidad.persona + "\r\n";
+                LbLista.Text = LbLista.Text + "Nombre " + Cantidad.persona + "" + "Año Nac " + Cantidad.AñoNacimieniento.ToString() + "\r\n";
             }
         }
+
+                
 
         private void BtLimpiar_Click(object sender, EventArgs e)
         {
@@ -87,6 +73,28 @@ namespace CargaEquiposSeleccion
                 }
 
             }
+        }
+
+        private void BtIngreso_Click_1(object sender, EventArgs e)
+        {
+            //Métodos de la caja de texto
+            TxIngreso.SelectAll();
+            TxIngreso.Focus();
+
+            //Instanciar un objeto, en este caso la clase persona
+            Jugadores persona = new Jugadores();
+
+            //Creando propiedades de la instancia persona
+            persona.persona = TxIngreso.Text;
+
+            persona.AñoNacimieniento = Convert.ToInt32(TxAño.Text);
+
+            Redimensionar();
+
+            //Propiedad "Personas" - Instancia "persona"
+            //Personas.Leng(longitud de personas)
+
+            personas[personas.Length - 1] = persona;
         }
     }  
 } 

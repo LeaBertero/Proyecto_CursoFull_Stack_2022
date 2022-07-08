@@ -19,7 +19,7 @@ namespace CargaEquiposSeleccion
 
         private void BtClave_Click(object sender, EventArgs e)
         {
-            if (TxClave.Text == "clave22")
+            if (TxClave.Text == "s")
             {
 
                 MessageBox.Show("Ingreso correcto");
@@ -27,16 +27,24 @@ namespace CargaEquiposSeleccion
                 FrmCarga SegundoForm = new FrmCarga();
                 SegundoForm.ShowDialog();
 
+                TxClave.SelectAll();
+                TxClave.Focus();
+
             }
             if (TxClave.Text == "")
             {
                 MessageBox.Show("Debe ingresar una clave valida");
                 
             }
-            if (TxClave.Text != "clave22")
+            if (TxClave.Text != "s")
             {
                 MessageBox.Show("Ingreso incorrecto");
             }
+        }
+
+        private void BtCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

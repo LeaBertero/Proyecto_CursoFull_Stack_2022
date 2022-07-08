@@ -11,6 +11,9 @@ namespace CargaEquiposSeleccion.Clases
     {
         //Propiedades de la clase (Persona)
         public string persona { get; set; }
+
+        public int AñoNacimieniento { get; set; }
+
     }
 }
 
