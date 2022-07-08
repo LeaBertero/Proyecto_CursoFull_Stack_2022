@@ -33,12 +33,12 @@ namespace CargaEquiposSeleccion
             }
             if (TxClave.Text == "")
             {
-                MessageBox.Show("Debe ingresar una clave valida");
+                MessageBox.Show("Acceso no valido");
                 
             }
             if (TxClave.Text != "s")
             {
-                MessageBox.Show("Ingreso incorrecto");
+                MessageBox.Show("Clave incorrecta - intente nuevamente");
             }
         }
 

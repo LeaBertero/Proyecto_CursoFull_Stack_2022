@@ -47,7 +47,7 @@
             this.BtIngreso.Name = "BtIngreso";
             this.BtIngreso.Size = new System.Drawing.Size(107, 32);
             this.BtIngreso.TabIndex = 3;
-            this.BtIngreso.Text = "Ingresar jugador";
+            this.BtIngreso.Text = "Ingresar";
             this.BtIngreso.UseVisualStyleBackColor = true;
             this.BtIngreso.Click += new System.EventHandler(this.BtIngreso_Click_1);
             // 
@@ -102,7 +102,7 @@
             this.BtLimpiar.Name = "BtLimpiar";
             this.BtLimpiar.Size = new System.Drawing.Size(107, 32);
             this.BtLimpiar.TabIndex = 5;
-            this.BtLimpiar.Text = "Borrar lista";
+            this.BtLimpiar.Text = "Borrar";
             this.BtLimpiar.UseVisualStyleBackColor = true;
             this.BtLimpiar.Click += new System.EventHandler(this.BtLimpiar_Click);
             // 
@@ -111,9 +111,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(138, 66);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Edad";
+            this.label1.Text = "Año de nacimiento";
             // 
             // TxAño
             // 
@@ -127,9 +127,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(35, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Nombre de jugador";
+            this.label3.Text = "Nombre ";
             // 
             // FrmCarga
             // 

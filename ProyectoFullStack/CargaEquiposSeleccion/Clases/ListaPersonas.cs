@@ -32,21 +32,30 @@ namespace CargaEquiposSeleccion.Clases
             Resp = "Lista de personas \r\n";
             foreach (Personas Pers in personas)
             {
-                Resp = Resp + "Nombre: " + Pers.Nombre + " - " + " Edad: " + Pers.Edad.ToString() + "\r\n" + "\r\n";
+                Resp = Resp + "Nombre: " + Pers.Nombre + " - " + " Año de nacimiento: " + Pers.AñoNacimiento.ToString() + "\r\n" + "\r\n";
             }
 
             return Resp;
         }
-        public void AddPersona(string Nombre, string Año)
+        public bool AddPersona(string Nombre, string Año)
         {
             Personas persona = new Personas(); //Instanciar/inicializar un objeto, en este caso la clase persona
             persona.Nombre = Nombre; //Creando propiedades de la instancia persona
-            persona.Edad = Convert.ToInt32(Año);
-            Redimensionar(); //LLamo al metodo en el boton de ingreso
-            personas[personas.Length -1] = persona;
+            persona.AñoNacimiento = Convert.ToInt32(Año);
+            bool respuesta = persona.Validar();
+
+            if (respuesta)
+            {
+                Redimensionar(); //LLamo al metodo en el boton de ingreso
+                personas[personas.Length - 1] = persona;
+            }
+            return respuesta;
+
         }
     }
 }
+            
+
 
 
 
