@@ -13,14 +13,11 @@ namespace CargaEquiposSeleccion
 {
     public partial class FrmCarga : Form //Form1 Hereda de Form
     {
-        //Arreglo de personas, para realizar la carga en el proyecto
-        public Jugadores[] personas { get; set; } = new Jugadores[3];
-
-        public int posicion = -1;
+        public Jugadores[] personas { get; set; } //Arreglo de personas, para realizar la carga en el proyecto
 
         public FrmCarga()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void BtSalir_Click(object sender, EventArgs e)
@@ -30,28 +27,19 @@ namespace CargaEquiposSeleccion
 
         private void BtIngreso_Click_1(object sender, EventArgs e)
         {
-            //Métodos de la caja de texto
-            TxIngreso.SelectAll();
-            TxIngreso.Focus();
-
-            //Instanciar un objeto, en este caso la clase persona
-            Jugadores persona = new Jugadores();
-
-            posicion = posicion + 1;
-
-            //Creando propiedades de la instancia persona
-            persona.Nombre = TxIngreso.Text;
+            Jugadores persona = new Jugadores(); //Instanciar/inicializar un objeto, en este caso la clase persona
+            
+            persona.Nombre = TxIngreso.Text; //Creando propiedades de la instancia persona
 
             persona.Edad = Convert.ToInt32(TxAño.Text);
+            
+            Redimensionar(); //LLamo al metodo en el boton de ingreso
 
-            personas[posicion] = persona;
-
-            //Redimensionar();
-
-            //Propiedad "Personas" - Instancia "persona"
-            //Personas.Leng(longitud de personas)
-
-            personas[personas.Length - 1] = persona;
+            personas[personas.Length -1] = persona;
+            
+            TxIngreso.SelectAll(); //Métodos de la caja de texto
+            
+            TxIngreso.Focus();
         }
 
         private void BtMostrar_Click(object sender, EventArgs e)
@@ -62,33 +50,64 @@ namespace CargaEquiposSeleccion
                 LbLista.Text = LbLista.Text + "Nombre: " + Pers.Nombre + " - " + " Edad: " + Pers.Edad.ToString() + "\r\n" + "\r\n";
             }
         }
-
+       
         private void BtLimpiar_Click(object sender, EventArgs e)
         {
             LbLista.Text = null;
         }
 
-        //private void Redimensionar()
-        //{
-        //    if (personas == null)
-        //    {
-        //        personas = new Jugadores[1];
-        //    }
-        //    else
-        //    {
-        //        Jugadores[] ArregloAuxiliar = new Jugadores[personas.Length + 1];
+        private void Redimensionar()
+        {
+            if (personas == null)
+            {
+                personas = new Jugadores[1];
+            }
+            else
+            {
+                Jugadores[] ArrNew = new Jugadores[personas.Length + 1];
 
-        //        for (int incremento = 0; incremento < personas.Length + 1; incremento++)
-        //        {
-        //            ArregloAuxiliar[incremento] = personas[incremento];
+                for (int AddPers = 0; AddPers < personas.Length; AddPers++)
+                {
+                    ArrNew[AddPers] = personas[AddPers];
+                }
 
-        //            personas = ArregloAuxiliar;
-        //        }
-        //    }
-        //}
-        
+                personas = ArrNew;
+            }
+        }
     }  
 } 
+        
+        
+
+
+       
+       
+        
+
+            
+            
+       
+       
+       
+
+
+            
+
+            
+
+
+
+
+
+
+        
+
+
+
+
+
+
+        
         
 
         
