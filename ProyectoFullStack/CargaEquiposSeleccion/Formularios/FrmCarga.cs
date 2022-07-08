@@ -13,38 +13,23 @@ namespace CargaEquiposSeleccion
 {
     public partial class FrmCarga : Form //Form1 Hereda de Form
     {
-        public ListaJugadores Lista { get; set; } = new ListaJugadores();
-
+        public ListaPersonas Lista { get; set; } = new ListaPersonas();
         public FrmCarga()
         {
             InitializeComponent(); 
         }
-
         private void BtSalir_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-       
         private void BtIngreso_Click_1(object sender, EventArgs e)
         {
-            //Jugadores persona = new Jugadores(); //Instanciar/inicializar un objeto, en este caso la clase persona
-            
-            //persona.Nombre = TxIngreso.Text; //Creando propiedades de la instancia persona
-
-            //persona.Edad = Convert.ToInt32(TxAño.Text);
-            
-            //Lista.Redimensionar(); //LLamo al metodo en el boton de ingreso
-
-            //Lista.personas[Lista.personas.Length -1] = persona;
-            
-            //TxIngreso.SelectAll(); //Métodos de la caja de texto
-            
-            //TxIngreso.Focus();
+            Lista.AddPersona(TxIngreso.Text, TxAño.Text);
         }
         private void BtMostrar_Click(object sender, EventArgs e)
         {
             LbLista.Text = "Lista de personas \r\n";
-            foreach (Jugadores Pers in Lista.personas)
+            foreach (Personas Pers in Lista.personas)
             {
                 LbLista.Text = LbLista.Text + "Nombre: " + Pers.Nombre + " - " + " Edad: " + Pers.Edad.ToString() + "\r\n" + "\r\n";
             }
@@ -55,6 +40,11 @@ namespace CargaEquiposSeleccion
         }
     }  
 } 
+            
+
+
+
+       
        
         
 

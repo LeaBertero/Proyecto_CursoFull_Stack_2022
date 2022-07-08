@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 namespace CargaEquiposSeleccion.Clases
 {
     //Clases
-    public class Jugadores
+    public class Personas
     {
         //Propiedades de la clase (Persona)
         public string Nombre { get; set; }
-
         public int Edad { get; set; }
-
     }
 }
+
+
 
 
 

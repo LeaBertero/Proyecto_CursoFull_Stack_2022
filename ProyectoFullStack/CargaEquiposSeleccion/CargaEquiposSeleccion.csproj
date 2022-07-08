@@ -46,14 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\ListaJugadores.cs" />
+    <Compile Include="Clases\ListaPersonas.cs" />
     <Compile Include="Formularios\FrmCarga.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmCarga.Designer.cs">
       <DependentUpon>FrmCarga.cs</DependentUpon>
     </Compile>
-    <Compile Include="Clases\Jugadores.cs" />
+    <Compile Include="Clases\Personas.cs" />
     <Compile Include="Formularios\FrmAcceso.cs">
       <SubType>Form</SubType>
     </Compile>
