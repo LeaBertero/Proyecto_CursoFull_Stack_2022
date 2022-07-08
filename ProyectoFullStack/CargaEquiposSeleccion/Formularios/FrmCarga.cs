@@ -14,10 +14,12 @@ namespace CargaEquiposSeleccion
     public partial class FrmCarga : Form //Form1 Hereda de Form
     {
         public ListaPersonas Lista { get; set; } = new ListaPersonas();
+
         public FrmCarga()
         {
             InitializeComponent(); 
         }
+        
         private void BtSalir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -28,12 +30,9 @@ namespace CargaEquiposSeleccion
         }
         private void BtMostrar_Click(object sender, EventArgs e)
         {
-            LbLista.Text = "Lista de personas \r\n";
-            foreach (Personas Pers in Lista.personas)
-            {
-                LbLista.Text = LbLista.Text + "Nombre: " + Pers.Nombre + " - " + " Edad: " + Pers.Edad.ToString() + "\r\n" + "\r\n";
-            }
+            LbLista.Text = Lista.ToString();
         }
+
         private void BtLimpiar_Click(object sender, EventArgs e)
         {
             LbLista.Text = null;

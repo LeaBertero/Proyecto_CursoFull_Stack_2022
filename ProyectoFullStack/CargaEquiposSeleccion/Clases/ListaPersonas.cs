@@ -13,7 +13,7 @@ namespace CargaEquiposSeleccion.Clases
         {
             if (personas == null)
             {
-               personas = new Personas[1];
+                personas = new Personas[1];
             }
             else
             {
@@ -25,7 +25,18 @@ namespace CargaEquiposSeleccion.Clases
                 personas = ArrNew;
             }
         }
+        public override string ToString()
+        {
+            string Resp = null;
 
+            Resp = "Lista de personas \r\n";
+            foreach (Personas Pers in personas)
+            {
+                Resp = Resp + "Nombre: " + Pers.Nombre + " - " + " Edad: " + Pers.Edad.ToString() + "\r\n" + "\r\n";
+            }
+
+            return Resp;
+        }
         public void AddPersona(string Nombre, string Año)
         {
             Personas persona = new Personas(); //Instanciar/inicializar un objeto, en este caso la clase persona
@@ -36,6 +47,10 @@ namespace CargaEquiposSeleccion.Clases
         }
     }
 }
+
+
+
+
 
 
 

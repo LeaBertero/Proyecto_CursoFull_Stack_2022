@@ -36,11 +36,11 @@
             // 
             // BtClave
             // 
-            this.BtClave.Location = new System.Drawing.Point(118, 156);
+            this.BtClave.Location = new System.Drawing.Point(131, 133);
             this.BtClave.Name = "BtClave";
-            this.BtClave.Size = new System.Drawing.Size(175, 56);
+            this.BtClave.Size = new System.Drawing.Size(151, 25);
             this.BtClave.TabIndex = 2;
-            this.BtClave.Text = "Acceder";
+            this.BtClave.Text = "Ingresar";
             this.BtClave.UseVisualStyleBackColor = true;
             this.BtClave.Click += new System.EventHandler(this.BtClave_Click);
             // 
@@ -62,7 +62,7 @@
             // 
             // BtCerrar
             // 
-            this.BtCerrar.Location = new System.Drawing.Point(157, 218);
+            this.BtCerrar.Location = new System.Drawing.Point(293, 211);
             this.BtCerrar.Name = "BtCerrar";
             this.BtCerrar.Size = new System.Drawing.Size(110, 25);
             this.BtCerrar.TabIndex = 3;
