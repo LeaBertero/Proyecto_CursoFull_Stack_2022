@@ -39,12 +39,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TxAño = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.BTFiltrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BtIngreso
             // 
             this.BtIngreso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtIngreso.Location = new System.Drawing.Point(94, 108);
+            this.BtIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtIngreso.Location = new System.Drawing.Point(35, 120);
             this.BtIngreso.Name = "BtIngreso";
             this.BtIngreso.Size = new System.Drawing.Size(107, 32);
             this.BtIngreso.TabIndex = 3;
@@ -56,11 +58,11 @@
             // 
             this.LbLista.AutoSize = true;
             this.LbLista.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbLista.Location = new System.Drawing.Point(322, 18);
+            this.LbLista.Location = new System.Drawing.Point(697, 18);
             this.LbLista.Name = "LbLista";
-            this.LbLista.Size = new System.Drawing.Size(376, 22);
+            this.LbLista.Size = new System.Drawing.Size(157, 22);
             this.LbLista.TabIndex = 1;
-            this.LbLista.Text = "En esta sección verá la lista de jugadores cargados";
+            this.LbLista.Text = "Lista de convocados";
             // 
             // TxIngreso
             // 
@@ -82,7 +84,8 @@
             // 
             // BtSalir
             // 
-            this.BtSalir.Location = new System.Drawing.Point(12, 309);
+            this.BtSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtSalir.Location = new System.Drawing.Point(35, 296);
             this.BtSalir.Name = "BtSalir";
             this.BtSalir.Size = new System.Drawing.Size(107, 43);
             this.BtSalir.TabIndex = 6;
@@ -92,7 +95,8 @@
             // 
             // BtMostrar
             // 
-            this.BtMostrar.Location = new System.Drawing.Point(94, 146);
+            this.BtMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtMostrar.Location = new System.Drawing.Point(443, 18);
             this.BtMostrar.Name = "BtMostrar";
             this.BtMostrar.Size = new System.Drawing.Size(107, 32);
             this.BtMostrar.TabIndex = 4;
@@ -102,7 +106,8 @@
             // 
             // BtLimpiar
             // 
-            this.BtLimpiar.Location = new System.Drawing.Point(94, 184);
+            this.BtLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtLimpiar.Location = new System.Drawing.Point(158, 120);
             this.BtLimpiar.Name = "BtLimpiar";
             this.BtLimpiar.Size = new System.Drawing.Size(107, 32);
             this.BtLimpiar.TabIndex = 5;
@@ -138,6 +143,17 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Nombre ";
             // 
+            // BTFiltrar
+            // 
+            this.BTFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTFiltrar.Location = new System.Drawing.Point(565, 18);
+            this.BTFiltrar.Name = "BTFiltrar";
+            this.BTFiltrar.Size = new System.Drawing.Size(107, 32);
+            this.BTFiltrar.TabIndex = 8;
+            this.BTFiltrar.Text = "Filtrar";
+            this.BTFiltrar.UseVisualStyleBackColor = true;
+            this.BTFiltrar.Click += new System.EventHandler(this.BTFiltrar_Click);
+            // 
             // FrmCarga
             // 
             this.AcceptButton = this.BtIngreso;
@@ -145,7 +161,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(710, 364);
+            this.ClientSize = new System.Drawing.Size(885, 364);
+            this.Controls.Add(this.BTFiltrar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxAño);
@@ -178,6 +195,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxAño;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button BTFiltrar;
     }
 }
 

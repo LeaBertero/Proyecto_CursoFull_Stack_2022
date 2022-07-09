@@ -42,12 +42,17 @@ namespace CargaEquiposSeleccion
         }
         private void BtMostrar_Click(object sender, EventArgs e)
         {
-            LbLista.Text = Lista.ToStringFiltrado(2000);
+            LbLista.Text = Lista.ToString();
         }
 
         private void BtLimpiar_Click(object sender, EventArgs e)
         {
             LbLista.Text = null;
+        }
+
+        private void BTFiltrar_Click(object sender, EventArgs e)
+        {
+            LbLista.Text = Lista.ToStringFiltrado(2000);
         }
     }  
 } 
