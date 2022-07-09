@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCarga));
             this.BtIngreso = new System.Windows.Forms.Button();
             this.LbLista = new System.Windows.Forms.Label();
             this.TxIngreso = new System.Windows.Forms.TextBox();
@@ -43,7 +44,7 @@
             // BtIngreso
             // 
             this.BtIngreso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtIngreso.Location = new System.Drawing.Point(35, 121);
+            this.BtIngreso.Location = new System.Drawing.Point(94, 108);
             this.BtIngreso.Name = "BtIngreso";
             this.BtIngreso.Size = new System.Drawing.Size(107, 32);
             this.BtIngreso.TabIndex = 3;
@@ -54,9 +55,10 @@
             // LbLista
             // 
             this.LbLista.AutoSize = true;
-            this.LbLista.Location = new System.Drawing.Point(291, 89);
+            this.LbLista.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbLista.Location = new System.Drawing.Point(322, 18);
             this.LbLista.Name = "LbLista";
-            this.LbLista.Size = new System.Drawing.Size(250, 13);
+            this.LbLista.Size = new System.Drawing.Size(376, 22);
             this.LbLista.TabIndex = 1;
             this.LbLista.Text = "En esta sección verá la lista de jugadores cargados";
             // 
@@ -66,19 +68,21 @@
             this.TxIngreso.Name = "TxIngreso";
             this.TxIngreso.Size = new System.Drawing.Size(100, 20);
             this.TxIngreso.TabIndex = 1;
+            this.TxIngreso.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 31);
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(38, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 13);
+            this.label2.Size = new System.Drawing.Size(258, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Ingrese los datos de los jugadores";
             // 
             // BtSalir
             // 
-            this.BtSalir.Location = new System.Drawing.Point(148, 270);
+            this.BtSalir.Location = new System.Drawing.Point(12, 309);
             this.BtSalir.Name = "BtSalir";
             this.BtSalir.Size = new System.Drawing.Size(107, 43);
             this.BtSalir.TabIndex = 6;
@@ -88,7 +92,7 @@
             // 
             // BtMostrar
             // 
-            this.BtMostrar.Location = new System.Drawing.Point(148, 121);
+            this.BtMostrar.Location = new System.Drawing.Point(94, 146);
             this.BtMostrar.Name = "BtMostrar";
             this.BtMostrar.Size = new System.Drawing.Size(107, 32);
             this.BtMostrar.TabIndex = 4;
@@ -98,7 +102,7 @@
             // 
             // BtLimpiar
             // 
-            this.BtLimpiar.Location = new System.Drawing.Point(148, 159);
+            this.BtLimpiar.Location = new System.Drawing.Point(94, 184);
             this.BtLimpiar.Name = "BtLimpiar";
             this.BtLimpiar.Size = new System.Drawing.Size(107, 32);
             this.BtLimpiar.TabIndex = 5;
@@ -109,25 +113,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(138, 66);
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(145, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 13);
+            this.label1.Size = new System.Drawing.Size(150, 22);
             this.label1.TabIndex = 6;
             this.label1.Text = "Año de nacimiento";
             // 
             // TxAño
             // 
-            this.TxAño.Location = new System.Drawing.Point(141, 82);
+            this.TxAño.Location = new System.Drawing.Point(165, 82);
             this.TxAño.Name = "TxAño";
             this.TxAño.Size = new System.Drawing.Size(100, 20);
             this.TxAño.TabIndex = 2;
+            this.TxAño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 66);
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(43, 50);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.Size = new System.Drawing.Size(76, 22);
             this.label3.TabIndex = 7;
             this.label3.Text = "Nombre ";
             // 
@@ -136,8 +143,9 @@
             this.AcceptButton = this.BtIngreso;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(580, 316);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(710, 364);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxAño);
@@ -148,6 +156,7 @@
             this.Controls.Add(this.TxIngreso);
             this.Controls.Add(this.LbLista);
             this.Controls.Add(this.BtIngreso);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaximizeBox = false;
             this.Name = "FrmCarga";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

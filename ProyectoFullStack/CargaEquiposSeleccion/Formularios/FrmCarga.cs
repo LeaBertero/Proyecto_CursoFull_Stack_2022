@@ -40,14 +40,9 @@ namespace CargaEquiposSeleccion
                 LbLista.Text = "Persona Valida";
             }
         }
-            
-
-           
-
-
         private void BtMostrar_Click(object sender, EventArgs e)
         {
-            LbLista.Text = Lista.ToString();
+            LbLista.Text = Lista.ToStringFiltrado(2000);
         }
 
         private void BtLimpiar_Click(object sender, EventArgs e)
@@ -56,6 +51,11 @@ namespace CargaEquiposSeleccion
         }
     }  
 } 
+            
+
+           
+
+
             
 
 

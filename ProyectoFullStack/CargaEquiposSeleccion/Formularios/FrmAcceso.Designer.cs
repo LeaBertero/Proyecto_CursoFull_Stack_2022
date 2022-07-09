@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAcceso));
             this.BtClave = new System.Windows.Forms.Button();
             this.TxClave = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,25 +47,28 @@
             // 
             // TxClave
             // 
-            this.TxClave.Location = new System.Drawing.Point(157, 97);
+            this.TxClave.Location = new System.Drawing.Point(119, 79);
             this.TxClave.Name = "TxClave";
-            this.TxClave.Size = new System.Drawing.Size(100, 20);
+            this.TxClave.Size = new System.Drawing.Size(163, 20);
             this.TxClave.TabIndex = 1;
+            this.TxClave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 35);
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(17, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 13);
+            this.label1.Size = new System.Drawing.Size(386, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ingrese la clave para acceder al formulario de carga";
             // 
             // BtCerrar
             // 
-            this.BtCerrar.Location = new System.Drawing.Point(293, 211);
+            this.BtCerrar.Location = new System.Drawing.Point(157, 211);
             this.BtCerrar.Name = "BtCerrar";
-            this.BtCerrar.Size = new System.Drawing.Size(110, 25);
+            this.BtCerrar.Size = new System.Drawing.Size(100, 25);
             this.BtCerrar.TabIndex = 3;
             this.BtCerrar.Text = "Cerrar";
             this.BtCerrar.UseVisualStyleBackColor = true;
@@ -76,6 +80,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(415, 248);
             this.Controls.Add(this.BtCerrar);
             this.Controls.Add(this.label1);

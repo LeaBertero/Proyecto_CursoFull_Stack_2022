@@ -25,18 +25,24 @@ namespace CargaEquiposSeleccion.Clases
                 personas = ArrNew;
             }
         }
-        public override string ToString()
+        public string ToStringFiltrado(int añominimo)
         {
             string Resp = null;
 
             Resp = "Lista de personas \r\n";
-            foreach (Personas Pers in personas)
+            foreach (Personas Ind in personas)
             {
-                Resp = Resp + "Nombre: " + Pers.Nombre + " - " + " Año de nacimiento: " + Pers.AñoNacimiento.ToString() + "\r\n" + "\r\n";
+                if (Ind.AñoNacimiento >= añominimo)
+                {
+                    Resp = Resp + Ind.AñoNacimiento.ToString() + " - " + Ind.Nombre + "\r\n";
+                }
+
+                Resp = Resp + "Nombre: " + Ind.Nombre + " - " + " Año de nacimiento: " + Ind.AñoNacimiento.ToString() + "\r\n" + "\r\n";
             }
 
             return Resp;
         }
+
         public bool AddPersona(string Nombre, string Año)
         {
             Personas persona = new Personas(); //Instanciar/inicializar un objeto, en este caso la clase persona
