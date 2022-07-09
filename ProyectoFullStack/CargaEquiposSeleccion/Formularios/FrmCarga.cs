@@ -29,11 +29,19 @@ namespace CargaEquiposSeleccion
         private void BtIngreso_Click_1(object sender, EventArgs e)
         {
             LbLista.Text = "";
-            if (!Lista.AddPersona(TxIngreso.Text,TxAño.Text));
+
+            if (!Lista.AddPersona(TxIngreso.Text, TxAño.Text)) 
             {
                 LbLista.Text = "Persona no valida";
+
+            }
+            else
+            {
+                LbLista.Text = "Persona Valida";
             }
         }
+            
+
            
 
 
