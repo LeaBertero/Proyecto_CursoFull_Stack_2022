@@ -28,7 +28,7 @@ namespace CargaEquiposSeleccion
         
         private void BtIngreso_Click_1(object sender, EventArgs e)
         {
-            LbLista.Text = "";
+            //LbLista.Text = "";
 
             if (!Lista.AddPersona(TxIngreso.Text, TxAño.Text)) 
             {
