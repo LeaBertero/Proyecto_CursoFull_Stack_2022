@@ -32,14 +32,21 @@ namespace CargaEquiposSeleccion
 
             if (!Lista.AddPersona(TxIngreso.Text, TxAño.Text)) 
             {
+                
+                TxAño.SelectAll();
+                TxIngreso.Text = null;
+                TxIngreso.Focus();
                 LbLista.Text = "Persona no valida";
-
             }
             else
             {
+                TxAño.Text = null;
+                TxIngreso.Text = null;
+                TxIngreso.Focus();
                 LbLista.Text = "Persona Valida";
             }
         }
+
         private void BtMostrar_Click(object sender, EventArgs e)
         {
             LbLista.Text = Lista.ToString();
@@ -56,6 +63,11 @@ namespace CargaEquiposSeleccion
         }
     }  
 } 
+
+
+            
+
+
             
 
            
